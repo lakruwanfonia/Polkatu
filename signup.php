@@ -7,6 +7,8 @@
 
 <body>
 	<?php include 'navbar.php';?>
+<br><br><br>
+
 	<h3> Registration</h3>
 	<form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
 	  <label>Email Address:</label><br>
@@ -43,14 +45,21 @@ $num_files = count($files)-3;
 	  echo "Account Created Succesfully <br>";
 	  echo "Your Account Number is : ".$num_files;
 	  
+	  success();
+	  
 	  
 	  //sleep(5);
-	  //header("Location: login.php");
-	  //die();
+	  
   } else{
 	  echo "Fill all the fields";
   }
 }
+	function success(){
+		  
+	  header("Location: success.php");
+		  
+	  die();
+		  }
 ?>
 <br><a href="login.php">Login</a>
 </body>

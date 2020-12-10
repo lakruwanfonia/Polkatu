@@ -3,7 +3,7 @@
 	  <div class=login> 
 		  
 		  <form action="navbar.php" method="post">
-    <input type="submit" name="signup" value="Sign up" onclick="login()" class="sign"/>
+    <input type="submit" name="signup" value="Sign up" onclick="sign()" class="sign"/>
     <input type="submit" name="login" value="Log in" onclick="login()" class="sign"/>
 </form> 
 		</div>
@@ -35,6 +35,15 @@
     function login()
     {
         header("Location: login.php");
+		die();   
+    }
+if($_SERVER['REQUEST_METHOD'] == "POST" and isset($_POST['signup']))
+    {
+        sign();
+    }
+    function sign()
+    {
+        header("Location: signup.php");
 		die();   
     }
 ?>
