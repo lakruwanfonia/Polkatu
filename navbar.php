@@ -1,4 +1,6 @@
 <link rel="stylesheet" type="text/css" href="CSS/styleagain.css">
+<link rel = "icon" href ="Images/coconut.png" 
+        type = "image/x-icon"> 
 <div id="navbar">
 	  <div class=login> 
 		  
